@@ -6,12 +6,12 @@ import ItemStatusFilter from "../item-status-filter";
 const SearchPanel = () => {
     return (
         <div className='row'>
-            <div className='col-md-8'>
+            <div className='col-sm-8'>
                 <input type="text"
                        className="form-control search-input"
                        placeholder="type to search"/>
             </div>
-            <div className='col-md-4'>
+            <div className='col-sm-4'>
                 <ItemStatusFilter/>
 
             </div>
