@@ -19,7 +19,7 @@ export default class App extends Component {
     };
 
     toggleProperty = (arr, id, prop_name) => {
-            let dataCopy = Object.assign([], toDoData);
+            let dataCopy = Object.assign([], this.state.toDoData);
             const idx = this.findItemIndex(id);
             const oldItem = arr[idx];
             const newItem = {...oldItem, [prop_name]: !oldItem[prop_name]};
