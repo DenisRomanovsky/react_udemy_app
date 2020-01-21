@@ -12,9 +12,8 @@ export default class RandomPlanet extends Component {
         loading: true
     };
 
-    constructor() {
-        super();
-        this.updatePlanet()
+    componentDidMount() {
+        this.updatePlanet();
     }
 
     onPlanetLoaded = (planet) => {
